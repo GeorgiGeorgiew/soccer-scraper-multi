@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Bundesliga Matchday</title>
+</head>
+
+<body>
+<h1>See the Bundesliga Matchday</h1>
+<h2>Season: <span th:text="${season}">season</span></h2>
+<h2>Gameday: <span th:text="${gameday}">gameday</span></h2>
+
+<div th:each="match : ${matchday.matches}">
+    <span th:text="${match}">match</span><br/>
+</div>
+
+<br><br><br><br><br><br><br><br>
+<th:block th:each="i: ${#numbers.sequence(1, 34)}">
+    <a th:href="@{/gameday/{season}/{gameday}(season=${season}, gameday=${i})}" th:text="${i}">season</a>
+</th:block>
+
+</body>
+
+</html>

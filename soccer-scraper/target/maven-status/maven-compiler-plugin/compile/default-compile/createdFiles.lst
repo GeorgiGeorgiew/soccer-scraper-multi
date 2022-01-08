@@ -1,0 +1,6 @@
+com/socc/scrp/model/Match.class
+com/socc/scrp/model/Matchday.class
+com/socc/scrp/model/Team.class
+com/socc/scrp/data/RestMatchdayDataAccess.class
+com/socc/scrp/model/Result.class
+com/socc/scrp/data/MatchdayDataAccess.class
